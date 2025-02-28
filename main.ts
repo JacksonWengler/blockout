@@ -1,9 +1,13 @@
 //Set the splash screen
 game.splash("Blockout","Made by Jackson W")
+info.setScore(0)
+scene.setBackgroundColor(0)
 namespace SpriteKind {
     export const block = SpriteKind.create()
 }
 let tile: Sprite = null
+let direction = 0
+direction = 1
 
 //Add the paddle and controls for it
 let Paddle = sprites.create(assets.image`CyanPaddle`, SpriteKind.Player)
@@ -16,6 +20,9 @@ let Ball = sprites.createProjectileFromSprite(assets.image`RedBall`,Paddle,50,-5
 Ball.setPosition(50, -55)
 Ball.setFlag(SpriteFlag.DestroyOnWall, false)
 Ball.setBounceOnWall(true)
+sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Player, function(sprite: Sprite, otherSprite: Sprite) {
+    sprite.setVelocity(sprite.vx, -1 * sprite.vy)
+})
 
 let x = 0 
 let tilepick = 0
@@ -36,3 +43,8 @@ for (let index = 0; index <=9; index++) {
         tile.setPosition(x,index2 * 18 + 20)
     }
 }
+function getPos(sprite: Sprite, otherSprite: Sprite) {
+    
+}
+
+//on step 16
