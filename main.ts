@@ -4,6 +4,7 @@ namespace SpriteKind {
     export const block = SpriteKind.create()
 }
 let tile: Sprite = null
+info.setScore(0)
 
 //Add the paddle and controls for it
 let Paddle = sprites.create(assets.image`CyanPaddle`, SpriteKind.Player)

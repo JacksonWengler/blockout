@@ -9,6 +9,21 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "RedBall"
     },
+    "image3": {
+        "data": "hwQQABAAAAAiMjMzZjYzzDIyMzM2trvMMnJ3dza2s8wycjNzNrazzDJyM3M2trPMInJ3d2a2s8xDRLS7u7uzzEMztDMzu7PMQzO0MzO7s8xDM7QzM7uzzEMztDMzu7PMQzO0u7u7s8xDMzQzM7O7zEMz9P/////MQ0T0MzMz88wzM/P/////zA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "block1"
+    },
+    "image4": {
+        "data": "hwQQABAAAAAiUlVVVSIiIiIlIiMiJSIiIiUimZmZKSIiJZkjIiWSKSKVMiIiJSKSREREJCIlIpIzOSJCIiUiIiIpIkIi3d0tIllVRVUtIi0iKSJCIi0iLSIpIkIiLSItIikiQiLd3S0iKSJCIiIiIkRERCQiIiKSIpIiIiIiIpIiIpkiIiKSKQ==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "block2"
+    },
+    "image5": {
+        "data": "hwQQABAAAAA+4+7u7u7u7u4+M+7u7u7u7o7uM+5e7u4u7uhOM+Xs7u7ijk7uM+Pu7uKO5OXuPuPuLu5Uzu6ePu7uQoXs7p7u7u5Czuju6e7u7k7s6O7u7u7uxOKO7u7u7p6Uku7u6e7uTu4u7u7p7u5M7u7inu7uzuTu7uKe7u7u5O7uLp7u7g==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "block3"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
