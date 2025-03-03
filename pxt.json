@@ -1,5 +1,5 @@
 {
-    "name": "Blockout",
+    "name": "Blockout Part 1",
     "description": "",
     "dependencies": {
         "device": "*"
@@ -20,7 +20,7 @@
         "branch": "v1.12.59",
         "tag": "v1.12.59",
         "commits": "https://github.com/microsoft/pxt-arcade/commits/96c778852a9e2f8b1d87f0671c1891a410657993",
-        "target": "1.12.59",
+        "target": "1.12.61",
         "pxt": "8.5.69",
         "targetId": "arcade"
     },

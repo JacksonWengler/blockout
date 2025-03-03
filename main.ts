@@ -8,7 +8,7 @@ Paddle.setStayInScreen(true)
 controller.moveSprite(Paddle,100,0)
 
 //add the ball projectile
-let Ball = sprites.create(assets.image`RedBall`, SpriteKind.Projectile)
+let Ball = sprites.createProjectileFromSprite(assets.image`RedBall`,Paddle,50,-55)
 Ball.setPosition(50, -55)
 Ball.setFlag(SpriteFlag.DestroyOnWall, false)
 Ball.setBounceOnWall(true)
