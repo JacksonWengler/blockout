@@ -1,17 +1,22 @@
 //Set the splash screen
 game.splash("Blockout", "Made by Jackson W")
+let tile: Sprite = null
+info.setScore(0)
+scene.setBackgroundColor(8)
+let direction = 0
+direction = 1
 namespace SpriteKind {
     export const block = SpriteKind.create()
 }
 function getPos(sprite: Sprite, otherSprite: Sprite){
-
+    if (sprite.x < otherSprite.x - 8 || sprite.x > otherSprite.x + 8 ){
+        direction = 1
+    } else{
+        direction = 0
+    }
 }
 
-let tile: Sprite = null
-info.setScore(0)
-scene.setBackgroundColor(8)
-let direction = 0 
-direction = 1
+
 
 //Add the paddle and controls for it
 let Paddle = sprites.create(assets.image`CyanPaddle`, SpriteKind.Player)
