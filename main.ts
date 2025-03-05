@@ -64,13 +64,21 @@ for (let index = 0; index <= 9; index++) {
         if (index2 % 2 == 1) {
             x = index * 18 + 8
         }
-        tilepick = randint(0, 2)
+        tilepick = randint(0, 6)
         if (tilepick == 0) {
             tile = sprites.create(assets.image`block1`, SpriteKind.block)
         } else if (tilepick == 1) {
             tile = sprites.create(assets.image`block2`, SpriteKind.block)
-        } else {
+        } else if (tilepick == 2){
             tile = sprites.create(assets.image`block3`, SpriteKind.block)
+        } else if (tilepick == 3){
+            tile = sprites.create(assets.image`block4`, SpriteKind.block)
+        } else if (tilepick == 4) {
+            tile = sprites.create(assets.image`block5`, SpriteKind.block)
+        } else if (tilepick == 5) {
+            tile = sprites.create(assets.image`block6`, SpriteKind.block)
+        } else {
+            tile = sprites.create(assets.image`block7`, SpriteKind.block)
         }
         tile.setPosition(x, index2 * 18 + 20)
     }
