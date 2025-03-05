@@ -39,6 +39,12 @@ let Ball = sprites.createProjectileFromSprite(assets.image`RedBall`, Paddle, 50,
 Ball.setPosition(50, -55)
 Ball.setFlag(SpriteFlag.DestroyOnWall, false)
 Ball.setBounceOnWall(true)
+controller.A.onEvent(ControllerButtonEvent.Pressed, function() {
+    let Ball = sprites.createProjectileFromSprite(assets.image`RedBall`, Paddle, 50, -55)
+    Ball.setPosition(50, -55)
+    Ball.setFlag(SpriteFlag.DestroyOnWall, false)
+    Ball.setBounceOnWall(true)
+})
 
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Player, function (sprite: Sprite, otherSprite: Sprite) {
     sprite.setVelocity(sprite.vx, -1 *sprite.vy)
