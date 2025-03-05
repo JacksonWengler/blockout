@@ -8,6 +8,7 @@ direction = 1
 namespace SpriteKind {
     export const block = SpriteKind.create()
 }
+
 function getPos(sprite: Sprite, otherSprite: Sprite){
     if (sprite.x < otherSprite.x - 8 || sprite.x > otherSprite.x + 8 ){
         direction = 1
@@ -15,6 +16,15 @@ function getPos(sprite: Sprite, otherSprite: Sprite){
         direction = 0
     }
 }
+
+forever ( function () {
+    if (Ball.bottom > 119){
+        game.over(false, effects.melt)
+    } else if(true){
+    info.onScore(29, function() {
+        game.over(true,effects.blizzard)
+    })}
+})
 
 
 
@@ -33,6 +43,18 @@ Ball.setBounceOnWall(true)
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Player, function (sprite: Sprite, otherSprite: Sprite) {
     sprite.setVelocity(sprite.vx, -1 *sprite.vy)
 })
+
+sprites.onOverlap(SpriteKind.Projectile, SpriteKind.block, function (sprite: Sprite, otherSprite: Sprite) {
+    info.changeScoreBy(1)
+    getPos(sprite, otherSprite)
+    if (direction == 1) {
+        sprite.setVelocity(-1 * sprite.vx, sprite.vy)
+    } else {
+        sprite.setVelocity(sprite.vx, -1 * sprite.vy)
+    }
+    otherSprite.destroy()
+})
+
 
 let x = 0
 let tilepick = 0
