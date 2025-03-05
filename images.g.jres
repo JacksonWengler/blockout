@@ -24,6 +24,26 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "CyanPaddle"
     },
+    "image6": {
+        "data": "hwQQABAAAAAiIoIzM1NVVSIiIjMzM1VVIiIiMzMzU1UiIiIzMzMzVSIiIjMzMzNTREQkNTMzMzNERERVMzMzM0RERFQ1MzMzRERERFUzMzNEREREVDUzM0hEREREIjMzVUREREQkIiJVRURERCQiIlVVREREJCIiVVVFREQkIiJVVYVERCQiIg==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "block4"
+    },
+    "image7": {
+        "data": "hwQQABAAAABDRERERERERDREREREREREQ0NERERERDQ0NERERERENENDQ0REREQ0NDMzRERERDNDNDRDREREMzRDMzNEREQzQzQzM0NENDM0MzMzM0QzM0RERDMzMzMzMzMzMzMzMzM0MzMzMzMzM0M0MzMzNDMzNDMzNDRDQzNDQ0NDQ0NDMw==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "block5"
+    },
+    "image8": {
+        "data": "hwQQABAAAABmZmZWlZmZmWZmZlaVmZmZZmZmVpWZmZlmZmZWlZmZmWZmZlaVmZmZZmZmVpWZmZlmZmZWlZmZmVVVVVVVVVVVVVVVVVVVVVWZmZlZZWZmZpmZmVllZmZmmZmZWWVmZmaZmZlZZWZmZpmZmVllZmZmmZmZWWVmZmaZmZlZZWZmZg==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "block6"
+    },
+    "image9": {
+        "data": "hwQQABAAAAAyMzMzMzMzcyczM3MzM3M3cjIzM3NzN3MnJ3MzNzdzN3JyMjczMzdzJycnc3NzczdycnIyMzc3cycnIic3czM3ciIncnIzc3MncnIiIjc3N3InJycncnNzJ3IiInIiNzdyJ3JyIidycydyJyciIiI3ciciIiciInInIiIiIiIiIg==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "block7"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
