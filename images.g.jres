@@ -44,6 +44,16 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "block7"
     },
+    "image10": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMDAAAAAAAwQjsAAAAAADBkNAAAAAAAMEsyAAAAAAAAMwMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "ball2"
+    },
+    "image11": {
+        "data": "hwQIAAgAAAAAAFBTAABQUwAAUFMAAFBTAABQUwAAUFMAAFBTAABQUw==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "paddle2"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",

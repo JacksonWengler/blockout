@@ -29,22 +29,16 @@ forever ( function () {
 
 
 //Add the paddle and controls for it
-let Paddle = sprites.create(assets.image`CyanPaddle`, SpriteKind.Player)
+let Paddle = sprites.create(assets.image`paddle2`, SpriteKind.Player)
 Paddle.setPosition(79, 100)
 Paddle.setStayInScreen(true)
 controller.moveSprite(Paddle, 100, 0)
 
 //add the ball projectile
-let Ball = sprites.createProjectileFromSprite(assets.image`RedBall`, Paddle, 50, -55)
+let Ball = sprites.createProjectileFromSprite(assets.image`ball2`, Paddle, 50, -55)
 Ball.setPosition(50, -55)
 Ball.setFlag(SpriteFlag.DestroyOnWall, false)
 Ball.setBounceOnWall(true)
-controller.A.onEvent(ControllerButtonEvent.Pressed, function() {
-    let Ball = sprites.createProjectileFromSprite(assets.image`RedBall`, Paddle, 50, -55)
-    Ball.setPosition(50, -55)
-    Ball.setFlag(SpriteFlag.DestroyOnWall, false)
-    Ball.setBounceOnWall(true)
-})
 
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Player, function (sprite: Sprite, otherSprite: Sprite) {
     sprite.setVelocity(sprite.vx, -1 *sprite.vy)
